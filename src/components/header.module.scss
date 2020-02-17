@@ -1,0 +1,36 @@
+// Utilities
+@import "./layout.scss";
+/* ------------------------- */
+/* Header Styles  */
+/* ------------------------- */
+header {
+  background: $dark-grey;
+
+  nav {
+    padding: 1rem 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        padding: 0 0.5rem;
+
+        a {
+          font-size: 1.2rem;
+          transition: all 0.2s ease-in;
+
+          &:hover {
+            color: #d4d4d4;
+          }
+        }
+      }
+    }
+
+    div:last-child {
+      text-align: right;
+    }
+  }
+}
