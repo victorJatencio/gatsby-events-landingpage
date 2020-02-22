@@ -243,3 +243,16 @@ a.btn {
     background: $dark-red;
   }
 }
+
+.hero-date-location {
+  padding: 2rem 0;
+  color: #fff;
+
+  small {
+    padding: 0 1rem;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
