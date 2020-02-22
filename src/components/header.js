@@ -45,7 +45,13 @@ const Header = () => (
         </ul>
       </div>
       <div className="col-xs-4">
-        <Button text="Buy tickets" color="#fff" />
+        <Button
+          text="Buy tickets"
+          color="#fff"
+          fontSize="0.8em"
+          padding="0.5em 1em"
+          className="btn"
+        />
       </div>
     </nav>
   </header>

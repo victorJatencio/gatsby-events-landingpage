@@ -1,13 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Button = ({ text, color }) => (
+const Button = ({
+  text,
+  color,
+  fontSize,
+  padding,
+  border,
+  background,
+  className,
+}) => (
   <Link
     to="/"
     style={{
       color: color,
+      fontSize: fontSize,
+      padding: padding,
+      background: background,
+      border: border,
     }}
-    className="btn"
+    className={className}
   >
     {text}
   </Link>

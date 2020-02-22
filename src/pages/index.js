@@ -10,15 +10,17 @@ import { faCalendar, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 import Img from "gatsby-image"
 
 import StyledBackgroundSection from "../components/backgroundImage"
+import Button from "../components/ui/button"
+import Counter from "../components/counter/counter"
 
 const IndexPage = props => (
   <Layout>
     <SEO title="Home" />
     <StyledBackgroundSection className="hero-background">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="center-md hero-date-location">
+        <div className="row center-xs">
+          <div className="col-xs-10">
+            <div className="hero-date-location">
               <small>
                 <FontAwesomeIcon icon={faCalendar} />
                 February 14-15, 2020
@@ -29,13 +31,37 @@ const IndexPage = props => (
                 New York, NY
               </small>
             </div>
-            <div className="center-md">
+            <div className="margin-y-l">
               <Img
                 fixed={props.data.imageLogoBig.childImageSharp.fixed}
                 alt="Fiesta Fest Logo"
               />
-              <p>Welcome to your new Gatsby site.</p>
-              <p>Now go build something great.</p>
+              <p className="padding-x-l margin-y-l light-txt">
+                Our festival annually gathers popular groups, performers, DJs,
+                musicians, and their fans from all over the world in one place.
+                Enjoy your favorite music live at Event Festival!
+              </p>
+
+              <div className="margin-y-l">
+                <Button
+                  text="Buy tickets"
+                  color="#fff"
+                  fontSize="0.8rem"
+                  padding="0.9em 5em"
+                  className="btn"
+                />
+                <Button
+                  text="Watch Video"
+                  color="#fff"
+                  fontSize="0.8rem"
+                  padding="0.9em 5em"
+                  className="btn btn-border"
+                />
+              </div>
+
+              <div>
+                <Counter />
+              </div>
             </div>
           </div>
         </div>

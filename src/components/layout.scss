@@ -182,6 +182,7 @@ table,
 blockquote {
   margin-top: 0rem;
   margin-bottom: 1.125rem;
+  line-height: 1.5;
 }
 
 ul ul,
@@ -230,20 +231,69 @@ ul {
   margin: 0;
 }
 
+/* My custom classes */
+
+/* All btn buttons */
 a.btn {
   background: $red;
   text-decoration: none;
-  font-size: 0.625rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 0.5rem 1rem;
   transition: all 0.2s ease-in;
+  border: 2px solid transparent;
+  margin: 0 1rem;
 
   &:hover {
     background: $dark-red;
+    border: 2px solid transparent;
   }
 }
 
+a.btn-border {
+  background: transparent;
+  border: 2px solid $red;
+}
+
+/* Spacing */
+.margin-x-l {
+  margin: 0 2rem;
+}
+.margin-x-m {
+  margin: 0 1.5rem;
+}
+.margin-x-s {
+  margin: 0 1.5rem;
+}
+.margin-y-l {
+  margin: 4rem 0;
+}
+.margin-y-m {
+  margin: 1.5rem 0;
+}
+.margin-y-s {
+  margin: 1rem 0;
+}
+
+.padding-x-l {
+  padding: 0 10rem;
+}
+.padding-x-m {
+  padding: 0 5rem;
+}
+.padding-x-s {
+  padding: 0 2.3rem;
+}
+.padding-y-l {
+  padding: 10rem 0;
+}
+.padding-y-m {
+  padding: 5rem 0;
+}
+.padding-y-s {
+  padding: 2.3rem 0;
+}
+
+/* Hero Section */
 .hero-date-location {
   padding: 2rem 0;
   color: #fff;
@@ -255,4 +305,8 @@ a.btn {
       margin-right: 5px;
     }
   }
+}
+
+.light-txt {
+  color: #fff;
 }
