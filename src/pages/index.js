@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -12,6 +12,8 @@ import Img from "gatsby-image"
 import StyledBackgroundSection from "../components/backgroundImage"
 import Button from "../components/ui/button"
 import Counter from "../components/counter/counter"
+import About from "../components/section/about/about"
+import RunningNumbers from "../components/section/running-numbers/runningNumbers"
 
 const IndexPage = props => (
   <Layout>
@@ -67,8 +69,36 @@ const IndexPage = props => (
         </div>
       </div>
     </StyledBackgroundSection>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+    <About />
+    <RunningNumbers>
+      <section>
+        <div className="container padding-y-m">
+          <div className="row">
+            <div className="col-xs-3">
+              <div className="specs-section">
+                <p className="font-xl">200+</p>
+              </div>
+            </div>
+            <div className="col-xs-3">
+              <div className="specs-section">
+                <p className="font-xl">12</p>
+              </div>
+            </div>
+            <div className="col-xs-3">
+              <div className="specs-section">
+                <p className="font-xl">9</p>
+              </div>
+            </div>
+            <div className="col-xs-3">
+              <div className="specs-section">
+                <p className="font-xl">2K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </RunningNumbers>
   </Layout>
 )
 

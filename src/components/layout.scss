@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:500,600,700,800&display=swap");
 
 /* ======================== */
 /* layout fedault styles */
@@ -255,6 +255,9 @@ a.btn-border {
 }
 
 /* Spacing */
+.margin-x {
+  margin: 0;
+}
 .margin-x-l {
   margin: 0 2rem;
 }
@@ -264,6 +267,9 @@ a.btn-border {
 .margin-x-s {
   margin: 0 1.5rem;
 }
+.margin-y {
+  margin: 0;
+}
 .margin-y-l {
   margin: 4rem 0;
 }
@@ -272,6 +278,29 @@ a.btn-border {
 }
 .margin-y-s {
   margin: 1rem 0;
+}
+
+.margin-bottom-l {
+  margin-bottom: 4rem;
+}
+.margin-bottom-m {
+  margin-bottom: 2rem;
+}
+.margin-bottom-s {
+  margin-bottom: 1rem;
+}
+
+.margin-top {
+  margin-top: 0;
+}
+.margin-top-l {
+  margin-top: 4rem;
+}
+.margin-top-m {
+  margin-top: 2rem;
+}
+.margin-top-s {
+  margin-top: 1rem;
 }
 
 .padding-x-l {
@@ -293,6 +322,12 @@ a.btn-border {
   padding: 2.3rem 0;
 }
 
+.font-xl {
+  font-size: 5rem;
+  font-weight: 800;
+  font-family: $title;
+}
+
 /* Hero Section */
 .hero-date-location {
   padding: 2rem 0;
@@ -309,4 +344,10 @@ a.btn-border {
 
 .light-txt {
   color: #fff;
+}
+
+/* Specs section */
+.specs-section {
+  text-align: center;
+  color: $red;
 }
