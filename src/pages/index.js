@@ -14,6 +14,7 @@ import Button from "../components/ui/button"
 import Counter from "../components/counter/counter"
 import About from "../components/section/about/about"
 import RunningNumbers from "../components/section/running-numbers/runningNumbers"
+import Ourteam from "../components/section/ourteam/ourteam"
 
 const IndexPage = props => (
   <Layout>
@@ -77,28 +78,33 @@ const IndexPage = props => (
           <div className="row">
             <div className="col-xs-3">
               <div className="specs-section">
-                <p className="font-xl">200+</p>
+                <p className="font-xl">20+</p>
+                <small>Artists</small>
               </div>
             </div>
             <div className="col-xs-3">
               <div className="specs-section">
                 <p className="font-xl">12</p>
+                <small>Days</small>
               </div>
             </div>
             <div className="col-xs-3">
               <div className="specs-section">
                 <p className="font-xl">9</p>
+                <small>Stages</small>
               </div>
             </div>
             <div className="col-xs-3">
               <div className="specs-section">
-                <p className="font-xl">2K</p>
+                <p className="font-xl">10K</p>
+                <small>Tickets</small>
               </div>
             </div>
           </div>
         </div>
       </section>
     </RunningNumbers>
+    <Ourteam />
   </Layout>
 )
 

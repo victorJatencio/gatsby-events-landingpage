@@ -289,6 +289,9 @@ a.btn-border {
 .margin-bottom-s {
   margin-bottom: 1rem;
 }
+.margin-bottom-xs {
+  margin-bottom: 0.4rem;
+}
 
 .margin-top {
   margin-top: 0;
@@ -349,5 +352,41 @@ a.btn-border {
 /* Specs section */
 .specs-section {
   text-align: center;
-  color: $red;
+
+  p {
+    color: $red;
+  }
+
+  small {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}
+
+/* Avatar Sections */
+.avatar-section {
+  text-align: center;
+
+  .avatar-item {
+    display: flex;
+    justify-content: center;
+
+    div {
+      min-width: 80px;
+      min-height: 80px;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  small {
+    color: $red;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
 }

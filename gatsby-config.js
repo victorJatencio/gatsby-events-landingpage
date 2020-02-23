@@ -28,6 +28,25 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-theme-material-ui`,
+      options: {
+        stylesConfig: {
+          disableAutoprefixing: true,
+          disableMinification: true,
+        },
+        webFontsConfig: {
+          fonts: {
+            google: [
+              {
+                family: `Open Sans`,
+                variants: [`300`, `400`, `500`],
+              },
+            ],
+          },
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
