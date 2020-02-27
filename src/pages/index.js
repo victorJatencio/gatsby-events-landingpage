@@ -15,6 +15,7 @@ import Counter from "../components/counter/counter"
 import About from "../components/section/about/about"
 import RunningNumbers from "../components/section/running-numbers/runningNumbers"
 import Ourteam from "../components/section/ourteam/ourteam"
+import Schedule from "../components/section/schedule/schedule"
 
 const IndexPage = props => (
   <Layout>
@@ -105,6 +106,7 @@ const IndexPage = props => (
       </section>
     </RunningNumbers>
     <Ourteam />
+    <Schedule />
   </Layout>
 )
 

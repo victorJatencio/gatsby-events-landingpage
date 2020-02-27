@@ -1,5 +1,14 @@
 import React from "react"
 import Avatar from "@material-ui/core/Avatar"
+import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faFacebook,
+  faTwitter,
+  faGooglePlus,
+} from "@fortawesome/free-brands-svg-icons"
+
+import "./ourteam.scss"
 
 const Ourteam = () => {
   return (
@@ -27,6 +36,25 @@ const Ourteam = () => {
                 and as a rock and electronic music fan, he became one of the
                 Event Festival founders.
               </p>
+              <div className="social-item">
+                <ul>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faGooglePlus} />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className="col-xs-4">
@@ -45,6 +73,25 @@ const Ourteam = () => {
                 festival. Her exceptional marketing skills allowed us to attract
                 more great artists to our event.
               </p>
+              <div className="social-item">
+                <ul>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faGooglePlus} />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className="col-xs-4">
@@ -63,6 +110,25 @@ const Ourteam = () => {
                 festival. Her exceptional marketing skills allowed us to attract
                 more great artists to our event.
               </p>
+              <div className="social-item">
+                <ul>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faGooglePlus} />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

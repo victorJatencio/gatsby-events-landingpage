@@ -1,0 +1,22 @@
+.social-item {
+  margin-top: 2rem;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 1rem;
+
+      a {
+        font-size: 1.2rem;
+        color: #dbdbdb;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          color: #97021e;
+        }
+      }
+    }
+  }
+}
